@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Lantik QuickBuy is a student-run campus shopping and delivery service concept at Christian Service University, Kumasi.">
+<meta name="description" content="Lantik QuickBuy is an independent student-run shopping and delivery service for students at participating universities and tertiary institutions in Kumasi.">
 <meta name="robots" content="index,follow">
 <meta property="og:title" content="Lantik QuickBuy | Student shopping and delivery in Kumasi">
 <meta property="og:description" content="For tertiary students in Kumasi: request essentials and arrange delivery through WhatsApp.">
@@ -22,9 +22,9 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="seal">CSU</div><div><b>LANTIK QUICKBUY</b><small>Campus shopping & delivery</small></div></div><div class="tag">A student-run service concept</div></header>
+<header><div class="brand"><div class="seal">LQ</div><div><b>LANTIK QUICKBUY</b><small>Campus shopping & delivery</small></div></div><div class="tag">A student-run service concept</div></header>
 <main>
-<section class="hero"><div><div class="kicker">Your campus. Your needs. Delivered.</div><h1>Need something?<br>We'll get it.</h1><p>Choose your school, send your shopping list, and we’ll confirm service availability and delivery time with you on WhatsApp.</p><a class="cta" href="#join">Create your account ↓</a><div class="note">Multiple schools • Personal confirmation • Convenient delivery</div></div><div class="basket" aria-hidden="true">🛍️</div></section>
+<section class="hero"><div><div class="kicker">Your campus. Your needs. Delivered.</div><h1>Welcome to<br>LANTIK QUICKBUY!</h1><p>Your campus shopping and delivery helper in Kumasi. Whether you’re at KNUST, CSU, KsTU or another participating institution, choose your school, tell us what you need, and we’ll confirm availability, price and delivery time with you on WhatsApp.</p><a class="cta" href="#join">Create your account ↓</a><div class="note">Multiple schools • Personal confirmation • Convenient delivery</div></div><div class="basket" aria-hidden="true">🛍️</div></section>
 <h2 class="section-title">How it works</h2><section class="steps"><article class="step"><div class="num">1</div><strong>Tell us what you need</strong><p>List groceries, toiletries, snacks or other everyday essentials and quantities.</p></article><article class="step"><div class="num">2</div><strong>We confirm on WhatsApp</strong><p>Your order opens as a ready-to-send WhatsApp message. We’ll confirm price and timing.</p></article><article class="step"><div class="num">3</div><strong>Receive your items</strong><p>Once agreed, we shop and arrange a convenient campus delivery point.</p></article></section>
 
 <section class="panel" id="join">
@@ -82,12 +82,12 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 document.getElementById('joinForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
 const message=`Hello! I would like to register for Lantik QuickBuy.%0AName: ${encodeURIComponent(v('memberName'))}%0AEmail: ${encodeURIComponent(v('memberEmail'))}%0AWhatsApp: ${encodeURIComponent(v('memberPhone'))}%0ASchool: ${encodeURIComponent(v('memberSchool'))}%0AMembership: ${encodeURIComponent(v('memberType'))}%0APlease confirm my membership request and next steps.`;
-window.open('https://wa.me/233534297579?text='+message,'_blank');
+window.open('https://wa.me/23350754934?text='+message,'_blank');
 });
 document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
 const msg=`Hello! I would like to place a Lantik QuickBuy order.%0A%0AName: ${encodeURIComponent(v('name'))}%0ACustomer phone: ${encodeURIComponent(v('phone'))}%0ASchool: ${encodeURIComponent(v('school'))}%0AItems:%0A${encodeURIComponent(v('items'))}%0ADelivery location: ${encodeURIComponent(v('location'))}%0APreferred time: ${encodeURIComponent(v('time'))}%0AExtra instructions: ${encodeURIComponent(v('extra'))}%0A%0APlease confirm availability, total cost and delivery time.`;
-window.open('https://wa.me/233534297579?text='+msg,'_blank');
+window.open('https://wa.me/23350754934?text='+msg,'_blank');
 });
 </script>
 </body></html>
