@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="CSU QuickBuy is a student-run campus shopping and delivery service concept at Christian Service University, Kumasi.">
+<meta name="description" content="Lantik QuickBuy is a student-run campus shopping and delivery service concept at Christian Service University, Kumasi.">
 <meta name="robots" content="index,follow">
-<meta property="og:title" content="CSU QuickBuy | Campus shopping made easy">
-<meta property="og:description" content="Join, order essentials and arrange campus delivery through WhatsApp.">
-<title>CSU QuickBuy | Campus shopping made easy</title>
+<meta property="og:title" content="Lantik QuickBuy | Student shopping and delivery in Kumasi">
+<meta property="og:description" content="For tertiary students in Kumasi: request essentials and arrange delivery through WhatsApp.">
+<title>Lantik QuickBuy | Student shopping and delivery in Kumasi</title>
 <style>
 :root{--blue:#173b73;--deep:#10284d;--gold:#e4b64e;--cream:#f7f8fb;--ink:#17243a;--muted:#66738a}
 *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--cream);color:var(--ink)}
@@ -22,18 +22,26 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 </style>
 </head>
 <body>
-<header><div class="brand"><div class="seal">CSU</div><div><b>CSU QUICKBUY</b><small>Campus shopping & delivery</small></div></div><div class="tag">A student-run service concept</div></header>
+<header><div class="brand"><div class="seal">CSU</div><div><b>LANTIK QUICKBUY</b><small>Campus shopping & delivery</small></div></div><div class="tag">A student-run service concept</div></header>
 <main>
-<section class="hero"><div><div class="kicker">Your campus. Your needs. Delivered.</div><h1>Need something?<br>We'll get it.</h1><p>Send your shopping list, tell us where to meet you on campus, and we’ll confirm availability and delivery time with you on WhatsApp.</p><a class="cta" href="#join">Create your account ↓</a><div class="note">Simple ordering • Personal confirmation • Campus convenience</div></div><div class="basket" aria-hidden="true">🛍️</div></section>
+<section class="hero"><div><div class="kicker">Your campus. Your needs. Delivered.</div><h1>Need something?<br>We'll get it.</h1><p>Choose your school, send your shopping list, and we’ll confirm service availability and delivery time with you on WhatsApp.</p><a class="cta" href="#join">Create your account ↓</a><div class="note">Multiple schools • Personal confirmation • Convenient delivery</div></div><div class="basket" aria-hidden="true">🛍️</div></section>
 <h2 class="section-title">How it works</h2><section class="steps"><article class="step"><div class="num">1</div><strong>Tell us what you need</strong><p>List groceries, toiletries, snacks or other everyday essentials and quantities.</p></article><article class="step"><div class="num">2</div><strong>We confirm on WhatsApp</strong><p>Your order opens as a ready-to-send WhatsApp message. We’ll confirm price and timing.</p></article><article class="step"><div class="num">3</div><strong>Receive your items</strong><p>Once agreed, we shop and arrange a convenient campus delivery point.</p></article></section>
 
 <section class="panel" id="join">
-<h2>Become a CSU QuickBuy member</h2>
+<h2>Become a Lantik QuickBuy member</h2>
 <p class="sub">Create your member profile before placing an order. Use an email address you can access.</p>
 <form id="joinForm">
 <div class="field"><label for="memberName">Full name *</label><input id="memberName" required placeholder="Your name"></div>
 <div class="field"><label for="memberEmail">Email address *</label><input id="memberEmail" required type="email" placeholder="name@gmail.com"></div>
 <div class="field"><label for="memberPhone">WhatsApp number *</label><input id="memberPhone" required type="tel" placeholder="Your contact number"></div>
+<div class="field"><label for="memberSchool">School *</label><select id="memberSchool" required><option value="">Select your school *</option>
+<option>KNUST — Kwame Nkrumah University of Science and Technology</option>
+<option>Christian Service University (CSU)</option>
+<option>Kumasi Technical University (KsTU)</option>
+<option>AAMUSTED — Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development</option>
+<option>Garden City University College</option>
+<option>Ghana Baptist University College</option>
+<option>Other institution in Kumasi</option></select></div>
 <div class="field"><label for="memberType">Membership *</label><select id="memberType"><option value="Standard member">Standard member — free</option><option value="VIP member — GH₵30 weekly">VIP member — GH₵30 weekly</option><option value="VIP member — GH₵120 monthly">VIP member — GH₵120 monthly</option></select></div>
 <div class="hint">Submitting opens WhatsApp so the service operator can receive your membership request. This prototype does not yet create a secure login or verify your email.</div>
 <button class="submit" type="submit">Send membership request via WhatsApp</button>
@@ -49,10 +57,18 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 </div>
 <p class="hint" style="margin-top:14px">VIP membership fee is separate from the cost of purchased items and any delivery charge. Membership becomes active only after payment is confirmed by the operator.</p>
 </section>
-\n<section class="panel" id="order"><h2>Make your order</h2><p class="sub">Members can fill in the details below. Your message will be prepared for WhatsApp.</p>
+\n<section class="panel" id="order"><h2>Make your order</h2><p class="sub">Students from participating tertiary institutions in Kumasi can fill in the details below. Your request will be sent through WhatsApp.</p>
 <form id="orderForm">
 <div class="field"><label for="name">Your name *</label><input id="name" required placeholder="e.g. Ama Mensah"></div>
 <div class="field"><label for="phone">Your phone number *</label><input id="phone" required type="tel" placeholder="Your WhatsApp/contact number"></div>
+<div class="field"><label for="school">Select your school *</label><select id="school" required><option value="">Select your school *</option>
+<option>KNUST — Kwame Nkrumah University of Science and Technology</option>
+<option>Christian Service University (CSU)</option>
+<option>Kumasi Technical University (KsTU)</option>
+<option>AAMUSTED — Akenten Appiah-Menka University of Skills Training and Entrepreneurial Development</option>
+<option>Garden City University College</option>
+<option>Ghana Baptist University College</option>
+<option>Other institution in Kumasi</option></select></div>
 <div class="field full"><label for="items">What would you like us to buy? *</label><textarea id="items" required placeholder="Example: 2 bottles of water&#10;1 loaf of bread&#10;1 pack of noodles"></textarea></div>
 <div class="field"><label for="location">Delivery location *</label><input id="location" required placeholder="Hostel, block, room or meeting point"></div>
 <div class="field"><label for="time">Preferred delivery time</label><select id="time"><option value="Please suggest a time">Please suggest a time</option><option>As soon as available</option><option>Within 1–2 hours</option><option>Later today</option><option>I'll agree with you on WhatsApp</option></select></div>
@@ -60,17 +76,17 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 <div class="hint">No payment is taken on this website. We’ll discuss item cost, delivery and availability with you first.</div>
 <button class="submit" type="submit">Send order via WhatsApp</button>
 </form></section>
-<div class="footer"><b>CSU QUICKBUY</b> · A campus convenience service concept<br><div class="disclaimer">Independent student-run concept; not an official Christian Service University service. University identity is referenced for campus context only. <br>Powered by <b>Lantik Entertainment</b></div></div>
+<div class="footer"><b>LANTIK QUICKBUY</b> · An independent student convenience service in Kumasi<br><div class="disclaimer">Independent student-run concept; not affiliated with or endorsed by any university. University names are used only to identify delivery locations. <br>Powered by <b>Lantik Entertainment</b></div></div>
 </main>
 <script>
 document.getElementById('joinForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
-const message=`Hello! I would like to register for CSU QuickBuy.%0AName: ${encodeURIComponent(v('memberName'))}%0AEmail: ${encodeURIComponent(v('memberEmail'))}%0AWhatsApp: ${encodeURIComponent(v('memberPhone'))}%0AMembership: ${encodeURIComponent(v('memberType'))}%0APlease confirm my membership request and next steps.`;
+const message=`Hello! I would like to register for Lantik QuickBuy.%0AName: ${encodeURIComponent(v('memberName'))}%0AEmail: ${encodeURIComponent(v('memberEmail'))}%0AWhatsApp: ${encodeURIComponent(v('memberPhone'))}%0ASchool: ${encodeURIComponent(v('memberSchool'))}%0AMembership: ${encodeURIComponent(v('memberType'))}%0APlease confirm my membership request and next steps.`;
 window.open('https://wa.me/233534297579?text='+message,'_blank');
 });
 document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
-const msg=`Hello! I would like to place a CSU QuickBuy order.%0A%0AName: ${encodeURIComponent(v('name'))}%0ACustomer phone: ${encodeURIComponent(v('phone'))}%0AItems:%0A${encodeURIComponent(v('items'))}%0ADelivery location: ${encodeURIComponent(v('location'))}%0APreferred time: ${encodeURIComponent(v('time'))}%0AExtra instructions: ${encodeURIComponent(v('extra'))}%0A%0APlease confirm availability, total cost and delivery time.`;
+const msg=`Hello! I would like to place a Lantik QuickBuy order.%0A%0AName: ${encodeURIComponent(v('name'))}%0ACustomer phone: ${encodeURIComponent(v('phone'))}%0ASchool: ${encodeURIComponent(v('school'))}%0AItems:%0A${encodeURIComponent(v('items'))}%0ADelivery location: ${encodeURIComponent(v('location'))}%0APreferred time: ${encodeURIComponent(v('time'))}%0AExtra instructions: ${encodeURIComponent(v('extra'))}%0A%0APlease confirm availability, total cost and delivery time.`;
 window.open('https://wa.me/233534297579?text='+msg,'_blank');
 });
 </script>
