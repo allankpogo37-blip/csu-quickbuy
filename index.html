@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="CSU QuickBuy is a student-run campus shopping and delivery service concept at Christian Service University, Kumasi.">
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="CSU QuickBuy | Campus shopping made easy">
+<meta property="og:description" content="Join, order essentials and arrange campus delivery through WhatsApp.">
+<title>CSU QuickBuy | Campus shopping made easy</title>
+<style>
+:root{--blue:#173b73;--deep:#10284d;--gold:#e4b64e;--cream:#f7f8fb;--ink:#17243a;--muted:#66738a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:var(--cream);color:var(--ink)}
+header{background:var(--deep);color:white;padding:14px max(5vw,20px);display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:4px solid var(--gold)}
+.brand{display:flex;align-items:center;gap:10px}.seal{width:46px;height:46px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-weight:900;font-size:12px}.brand b{display:block;letter-spacing:.4px}.brand small{color:#d8e2f2}
+.tag{font-size:12px;color:#f6d98f;border:1px solid #8f793e;border-radius:99px;padding:7px 10px}
+main{max-width:1100px;margin:auto;padding:34px 20px 60px}.hero{background:linear-gradient(120deg,var(--blue),#24528c);color:white;border-radius:24px;padding:38px;display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center;overflow:hidden;position:relative}
+.kicker{color:#f5d58b;text-transform:uppercase;font-weight:800;font-size:12px;letter-spacing:1.5px}.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.03;margin:12px 0}.hero p{color:#e3ebf7;max-width:540px;line-height:1.6}.cta{display:inline-block;background:var(--gold);color:#17243a;text-decoration:none;padding:13px 20px;border-radius:10px;font-weight:800;margin-top:10px}.basket{font-size:110px;text-align:center;filter:drop-shadow(0 14px 15px #0b1d3866)}
+.note{font-size:12px;color:#d5e1f2;margin-top:16px}.section-title{margin:34px 0 14px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step,.panel{background:white;border:1px solid #e5e9f0;border-radius:16px;padding:18px;box-shadow:0 8px 24px #173b730a}.step strong{display:block;margin:9px 0 5px}.step p{margin:0;color:var(--muted);font-size:14px;line-height:1.5}.num{background:#eaf0fa;color:var(--blue);width:34px;height:34px;border-radius:10px;display:grid;place-items:center;font-weight:900}
+.panel{margin-top:28px;padding:24px}.panel h2{margin:0 0 5px}.sub{color:var(--muted);margin:0 0 20px;font-size:14px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;font-weight:750;display:block;margin-bottom:7px}.field.full{grid-column:1/-1}input,textarea,select{width:100%;padding:12px 13px;border:1px solid #d9dfeb;border-radius:9px;font:inherit;background:#fff}textarea{min-height:105px;resize:vertical}.submit{grid-column:1/-1;border:0;background:#1d8b58;color:white;padding:15px;border-radius:10px;font-weight:850;font-size:15px;cursor:pointer}.hint{font-size:12px;color:var(--muted);grid-column:1/-1}.footer{margin-top:28px;text-align:center;color:var(--muted);font-size:12px}.footer b{color:var(--blue)}.disclaimer{margin:12px auto 0;max-width:720px}
+@media(max-width:700px){.hero{grid-template-columns:1fr;padding:28px}.basket{font-size:70px}.steps{grid-template-columns:1fr}form{grid-template-columns:1fr}.field.full,.submit,.hint{grid-column:1}.tag{display:none}}
+</style>
+</head>
+<body>
+<header><div class="brand"><div class="seal">CSU</div><div><b>CSU QUICKBUY</b><small>Campus shopping & delivery</small></div></div><div class="tag">A student-run service concept</div></header>
+<main>
+<section class="hero"><div><div class="kicker">Your campus. Your needs. Delivered.</div><h1>Need something?<br>We'll get it.</h1><p>Send your shopping list, tell us where to meet you on campus, and we’ll confirm availability and delivery time with you on WhatsApp.</p><a class="cta" href="#join">Create your account ↓</a><div class="note">Simple ordering • Personal confirmation • Campus convenience</div></div><div class="basket" aria-hidden="true">🛍️</div></section>
+<h2 class="section-title">How it works</h2><section class="steps"><article class="step"><div class="num">1</div><strong>Tell us what you need</strong><p>List groceries, toiletries, snacks or other everyday essentials and quantities.</p></article><article class="step"><div class="num">2</div><strong>We confirm on WhatsApp</strong><p>Your order opens as a ready-to-send WhatsApp message. We’ll confirm price and timing.</p></article><article class="step"><div class="num">3</div><strong>Receive your items</strong><p>Once agreed, we shop and arrange a convenient campus delivery point.</p></article></section>
+
+<section class="panel" id="join">
+<h2>Become a CSU QuickBuy member</h2>
+<p class="sub">Create your member profile before placing an order. Use an email address you can access.</p>
+<form id="joinForm">
+<div class="field"><label for="memberName">Full name *</label><input id="memberName" required placeholder="Your name"></div>
+<div class="field"><label for="memberEmail">Email address *</label><input id="memberEmail" required type="email" placeholder="name@gmail.com"></div>
+<div class="field"><label for="memberPhone">WhatsApp number *</label><input id="memberPhone" required type="tel" placeholder="Your contact number"></div>
+<div class="field"><label for="memberType">Membership *</label><select id="memberType"><option value="Standard member">Standard member — free</option><option value="VIP member — GH₵30 weekly">VIP member — GH₵30 weekly</option><option value="VIP member — GH₵120 monthly">VIP member — GH₵120 monthly</option></select></div>
+<div class="hint">Submitting opens WhatsApp so the service operator can receive your membership request. This prototype does not yet create a secure login or verify your email.</div>
+<button class="submit" type="submit">Send membership request via WhatsApp</button>
+</form>
+</section>
+<section class="panel" id="vip">
+<h2>Go VIP. Get priority.</h2>
+<p class="sub">For students who want priority shopping and same-day delivery, subject to availability and campus delivery hours.</p>
+<div class="steps">
+<article class="step"><div class="num">GH₵0</div><strong>Standard</strong><p>Send your order and receive a delivery-time confirmation based on availability.</p></article>
+<article class="step"><div class="num">GH₵30</div><strong>VIP weekly</strong><p>One-week VIP membership with priority handling and same-day delivery when available.</p></article>
+<article class="step"><div class="num">GH₵120</div><strong>VIP monthly</strong><p>Four weeks at GH₵30 per week. GH₵30 × 4 = GH₵120.</p></article>
+</div>
+<p class="hint" style="margin-top:14px">VIP membership fee is separate from the cost of purchased items and any delivery charge. Membership becomes active only after payment is confirmed by the operator.</p>
+</section>
+\n<section class="panel" id="order"><h2>Make your order</h2><p class="sub">Members can fill in the details below. Your message will be prepared for WhatsApp.</p>
+<form id="orderForm">
+<div class="field"><label for="name">Your name *</label><input id="name" required placeholder="e.g. Ama Mensah"></div>
+<div class="field"><label for="phone">Your phone number *</label><input id="phone" required type="tel" placeholder="Your WhatsApp/contact number"></div>
+<div class="field full"><label for="items">What would you like us to buy? *</label><textarea id="items" required placeholder="Example: 2 bottles of water&#10;1 loaf of bread&#10;1 pack of noodles"></textarea></div>
+<div class="field"><label for="location">Delivery location *</label><input id="location" required placeholder="Hostel, block, room or meeting point"></div>
+<div class="field"><label for="time">Preferred delivery time</label><select id="time"><option value="Please suggest a time">Please suggest a time</option><option>As soon as available</option><option>Within 1–2 hours</option><option>Later today</option><option>I'll agree with you on WhatsApp</option></select></div>
+<div class="field full"><label for="extra">Extra instructions (optional)</label><textarea id="extra" placeholder="Brand preference, budget, substitutions, etc."></textarea></div>
+<div class="hint">No payment is taken on this website. We’ll discuss item cost, delivery and availability with you first.</div>
+<button class="submit" type="submit">Send order via WhatsApp</button>
+</form></section>
+<div class="footer"><b>CSU QUICKBUY</b> · A campus convenience service concept<br><div class="disclaimer">Independent student-run concept; not an official Christian Service University service. University identity is referenced for campus context only. <br>Powered by <b>Lantik Entertainment</b></div></div>
+</main>
+<script>
+document.getElementById('joinForm').addEventListener('submit',function(e){e.preventDefault();
+const v=id=>document.getElementById(id).value.trim();
+const message=`Hello! I would like to register for CSU QuickBuy.%0AName: ${encodeURIComponent(v('memberName'))}%0AEmail: ${encodeURIComponent(v('memberEmail'))}%0AWhatsApp: ${encodeURIComponent(v('memberPhone'))}%0AMembership: ${encodeURIComponent(v('memberType'))}%0APlease confirm my membership request and next steps.`;
+window.open('https://wa.me/233534297579?text='+message,'_blank');
+});
+document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();
+const v=id=>document.getElementById(id).value.trim();
+const msg=`Hello! I would like to place a CSU QuickBuy order.%0A%0AName: ${encodeURIComponent(v('name'))}%0ACustomer phone: ${encodeURIComponent(v('phone'))}%0AItems:%0A${encodeURIComponent(v('items'))}%0ADelivery location: ${encodeURIComponent(v('location'))}%0APreferred time: ${encodeURIComponent(v('time'))}%0AExtra instructions: ${encodeURIComponent(v('extra'))}%0A%0APlease confirm availability, total cost and delivery time.`;
+window.open('https://wa.me/233534297579?text='+msg,'_blank');
+});
+</script>
+</body></html>
