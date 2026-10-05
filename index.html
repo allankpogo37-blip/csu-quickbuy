@@ -82,12 +82,12 @@ form{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-size:13px;fo
 document.getElementById('joinForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
 const message=`Hello! I would like to register for Lantik QuickBuy.%0AName: ${encodeURIComponent(v('memberName'))}%0AEmail: ${encodeURIComponent(v('memberEmail'))}%0AWhatsApp: ${encodeURIComponent(v('memberPhone'))}%0ASchool: ${encodeURIComponent(v('memberSchool'))}%0AMembership: ${encodeURIComponent(v('memberType'))}%0APlease confirm my membership request and next steps.`;
-window.open('https://wa.me/2335075493499?text='+message,'_blank');
+window.open('https://wa.me/233507549349?text='+message,'_blank');
 });
 document.getElementById('orderForm').addEventListener('submit',function(e){e.preventDefault();
 const v=id=>document.getElementById(id).value.trim();
 const msg=`Hello! I would like to place a Lantik QuickBuy order.%0A%0AName: ${encodeURIComponent(v('name'))}%0ACustomer phone: ${encodeURIComponent(v('phone'))}%0ASchool: ${encodeURIComponent(v('school'))}%0AItems:%0A${encodeURIComponent(v('items'))}%0ADelivery location: ${encodeURIComponent(v('location'))}%0APreferred time: ${encodeURIComponent(v('time'))}%0AExtra instructions: ${encodeURIComponent(v('extra'))}%0A%0APlease confirm availability, total cost and delivery time.`;
-window.open('https://wa.me/2335075493499?text='+msg,'_blank');
+window.open('https://wa.me/233507549349?text='+msg,'_blank');
 });
 </script>
 </body></html>
